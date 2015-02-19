@@ -35,7 +35,8 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Rounak, rounak91@gmail.com
+Rounak Jain.
+
 Follow me on Twitter [@r0unak](https://twitter.com/r0unak)
 
 ## License
