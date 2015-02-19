@@ -4,6 +4,8 @@ This project is based on [Michael Villar's excellent Motion Experiments post](ht
 
 ![demo](https://raw.githubusercontent.com/rounak/RJImageLoader/master/out6.gif)
 
+For a detailed explaination of the animation, visit [raywenderlich.com](http://www.raywenderlich.com/94302/implement-circular-image-loader-animation-cashapelayer).
+
 ## Usage
 
 
