@@ -1,8 +1,30 @@
 # RJImageLoader
 
- ![demo](https://raw.githubusercontent.com/rounak/RJImageLoader/master/out6.gif)
+This project is based on [Michael Villar's excellent Motion Experiments post](http://www.michaelvillar.com/motion). He designed an image loading animation which shows a circular progress indicator, and then reveals the image in an expanding circular ring.
+
+![demo](https://raw.githubusercontent.com/rounak/RJImageLoader/master/out6.gif)
 
 ## Usage
+
+
+```objective-c
+#import <UIImageView+RJLoader.h>
+
+...
+//before starting
+[self.imageView startLoader];
+
+...
+
+//update progress
+[self.imageView updateImageDownloadProgress:progress];
+
+...
+//after completion
+[self.imageView reveal];
+
+```
+
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
@@ -18,6 +40,7 @@ it, simply add the following line to your Podfile:
 ## Author
 
 Rounak, rounak91@gmail.com
+Follow me on Twitter [@r0unak](https://twitter.com/r0unak)
 
 ## License
 
