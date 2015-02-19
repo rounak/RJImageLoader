@@ -10,16 +10,12 @@ This project is based on [Michael Villar's excellent Motion Experiments post](ht
 ```objective-c
 #import <UIImageView+RJLoader.h>
 
-...
 //before starting
 [self.imageView startLoader];
-
-...
 
 //update progress
 [self.imageView updateImageDownloadProgress:progress];
 
-...
 //after completion
 [self.imageView reveal];
 
@@ -27,8 +23,6 @@ This project is based on [Michael Villar's excellent Motion Experiments post](ht
 
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
