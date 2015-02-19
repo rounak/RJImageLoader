@@ -2,10 +2,10 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'RJImageLoader', :exclusive => true do
   pod "RJImageLoader", :path => "../"
+  pod 'SDWebImage'
 end
 
 target 'Tests', :exclusive => true do
   pod "RJImageLoader", :path => "../"
 
-  
 end
