@@ -1,5 +1,7 @@
 # RJImageLoader
 
+ ![demo](https://raw.githubusercontent.com/rounak/RJImageLoader/master/out6.gif)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
