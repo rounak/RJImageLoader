@@ -57,6 +57,12 @@
     self.circlePathLayer.path = self.circlePath;
 }
 
+- (void)tintColorDidChange
+{
+    [super tintColorDidChange];
+    self.circlePathLayer.strokeColor = self.tintColor.CGColor;
+}
+
 - (void)reveal
 {
     self.backgroundColor = [UIColor clearColor];
@@ -109,12 +115,6 @@
     }
     _progress = progress;
     self.circlePathLayer.strokeEnd = _progress;
-}
-
-- (void)setTintColor:(UIColor *)tintColor
-{
-    _tintColor = tintColor;
-    self.circlePathLayer.strokeColor = _tintColor.CGColor;
 }
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
