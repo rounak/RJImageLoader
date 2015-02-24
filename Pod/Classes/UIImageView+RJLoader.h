@@ -14,7 +14,7 @@
 
 - (void)updateImageDownloadProgress:(CGFloat)progress;
 - (void)startLoader;
-- (void)startLoaderWithColor:(UIColor *)color;
+- (void)startLoaderWithTintColor:(UIColor *)color;
 - (void)reveal;
 
 @end

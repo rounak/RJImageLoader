@@ -30,15 +30,16 @@
 
 - (void)startLoader
 {
-    [self startLoaderWithColor:[UIColor redColor]];
-}
-
-- (void)startLoaderWithColor:(UIColor *)color {
     RJCircularLoaderView *loaderView = self.rj_circularLoaderView;
     loaderView.frame = self.bounds;
-    loaderView.tintColor = color;
     [self addSubview:loaderView];
     loaderView.progress = 0;
+}
+
+- (void)startLoaderWithTintColor:(UIColor *)color
+{
+    [self startLoader];
+    self.rj_circularLoaderView.tintColor = color;
 }
 
 - (void)reveal

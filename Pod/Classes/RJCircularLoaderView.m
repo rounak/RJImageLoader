@@ -43,6 +43,7 @@
         _circlePathLayer.lineWidth = 2;
         _circlePathLayer.fillColor = [UIColor clearColor].CGColor;
         _circlePathLayer.strokeStart = 0;
+        _circlePathLayer.strokeColor = self.tintColor.CGColor;
         _circlePathLayer.strokeEnd = _progress;
         [self.layer addSublayer:_circlePathLayer];
         self.backgroundColor = [UIColor whiteColor];
