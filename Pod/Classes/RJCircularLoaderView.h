@@ -13,5 +13,6 @@
 - (void)reveal;
 
 @property (nonatomic) CGFloat progress;
+@property (strong, nonatomic) UIColor *tintColor;
 
 @end

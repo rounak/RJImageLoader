@@ -42,7 +42,6 @@
         _circlePathLayer.frame = self.bounds;
         _circlePathLayer.lineWidth = 2;
         _circlePathLayer.fillColor = [UIColor clearColor].CGColor;
-        _circlePathLayer.strokeColor = [UIColor redColor].CGColor;
         _circlePathLayer.strokeStart = 0;
         _circlePathLayer.strokeEnd = _progress;
         [self.layer addSublayer:_circlePathLayer];
@@ -110,6 +109,12 @@
     }
     _progress = progress;
     self.circlePathLayer.strokeEnd = _progress;
+}
+
+- (void)setTintColor:(UIColor *)tintColor
+{
+    _tintColor = tintColor;
+    self.circlePathLayer.strokeColor = _tintColor.CGColor;
 }
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
