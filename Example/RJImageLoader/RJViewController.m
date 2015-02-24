@@ -19,7 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.imageView startLoader];
+    [self.imageView startLoaderWithTintColor:[UIColor blueColor]];
     __weak typeof(self)weakSelf = self;
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:@"http://www.hdwallpapersinn.com/wp-content/uploads/2014/08/cute-cat-wallpapers.jpg"] placeholderImage:nil options:SDWebImageCacheMemoryOnly | SDWebImageRefreshCached progress:^(NSInteger receivedSize, NSInteger expectedSize) {
                 [weakSelf.imageView updateImageDownloadProgress:(CGFloat)receivedSize/expectedSize];

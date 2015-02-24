@@ -36,6 +36,12 @@
     loaderView.progress = 0;
 }
 
+- (void)startLoaderWithTintColor:(UIColor *)color
+{
+    [self startLoader];
+    self.rj_circularLoaderView.tintColor = color;
+}
+
 - (void)reveal
 {
     [self.rj_circularLoaderView reveal];

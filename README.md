@@ -15,6 +15,8 @@ For a detailed explaination of the animation, visit [raywenderlich.com](http://w
 //before starting
 [self.imageView startLoader];
 
+//to change the color of the indicator, use the startLoaderWithTintColor: method
+
 //update progress
 [self.imageView updateImageDownloadProgress:progress];
 
@@ -38,6 +40,10 @@ it, simply add the following line to your Podfile:
 Rounak Jain.
 
 Follow me on Twitter [@r0unak](https://twitter.com/r0unak)
+
+##Contributors
+
+[@bguidolim](http://twitter.com/bguidolim)
 
 ## License
 

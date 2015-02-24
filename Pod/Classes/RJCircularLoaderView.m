@@ -42,8 +42,8 @@
         _circlePathLayer.frame = self.bounds;
         _circlePathLayer.lineWidth = 2;
         _circlePathLayer.fillColor = [UIColor clearColor].CGColor;
-        _circlePathLayer.strokeColor = [UIColor redColor].CGColor;
         _circlePathLayer.strokeStart = 0;
+        _circlePathLayer.strokeColor = self.tintColor.CGColor;
         _circlePathLayer.strokeEnd = _progress;
         [self.layer addSublayer:_circlePathLayer];
         self.backgroundColor = [UIColor whiteColor];
@@ -56,6 +56,12 @@
     [super layoutSubviews];
     self.circlePathLayer.frame = self.bounds;
     self.circlePathLayer.path = self.circlePath;
+}
+
+- (void)tintColorDidChange
+{
+    [super tintColorDidChange];
+    self.circlePathLayer.strokeColor = self.tintColor.CGColor;
 }
 
 - (void)reveal
