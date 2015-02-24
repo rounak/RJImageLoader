@@ -15,6 +15,8 @@ For a detailed explaination of the animation, visit [raywenderlich.com](http://w
 //before starting
 [self.imageView startLoader];
 
+//to change the color of the indicator, use the startLoaderWithTintColor: method
+
 //update progress
 [self.imageView updateImageDownloadProgress:progress];
 
