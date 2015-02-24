@@ -39,6 +39,10 @@ Rounak Jain.
 
 Follow me on Twitter [@r0unak](https://twitter.com/r0unak)
 
+##Contributors
+
+[@bguidolim](http://twitter.com/bguidolim)
+
 ## License
 
 RJImageLoader is available under the MIT license. See the LICENSE file for more info.
