@@ -1,6 +1,6 @@
 # RJImageLoader
 
-+[![Version](https://img.shields.io/cocoapods/v/RJImageLoader.svg?style=flat)](http://cocoadocs.org/docsets/RJImageLoader)
+[![Version](https://img.shields.io/cocoapods/v/RJImageLoader.svg?style=flat)](http://cocoadocs.org/docsets/RJImageLoader)
 
 This project is based on [Michael Villar's excellent Motion Experiments post](http://www.michaelvillar.com/motion). He designed an image loading animation which shows a circular progress indicator, and then reveals the image in an expanding circular ring.
 
