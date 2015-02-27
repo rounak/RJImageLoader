@@ -89,6 +89,7 @@
     
     CAAnimationGroup *groupAnimation = [CAAnimationGroup animation];
     groupAnimation.fillMode = kCAFillModeForwards;
+    // Prevent the removal of the animation on completion to fix a flicker.  We will remove it manually after we remove the mask.
     groupAnimation.removedOnCompletion = NO;
     groupAnimation.duration = 1;
     groupAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
