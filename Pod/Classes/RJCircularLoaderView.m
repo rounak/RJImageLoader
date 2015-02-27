@@ -88,6 +88,8 @@
     [CATransaction commit];
     
     CAAnimationGroup *groupAnimation = [CAAnimationGroup animation];
+    groupAnimation.fillMode = kCAFillModeForwards;
+    groupAnimation.removedOnCompletion = NO;
     groupAnimation.duration = 1;
     groupAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     
@@ -121,6 +123,7 @@
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
     self.superview.layer.mask = nil;
+    [self.circlePathLayer removeAllAnimations];
     [self removeFromSuperview];
 }
 
