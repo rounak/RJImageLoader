@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "RJImageLoader"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "A neat image loader for iOS based on Michael Villar's design."
   s.description      = <<-DESC
                        RJImageLoader is a category on UIImageView that lets you add a circular progress and reveal animation when loading images from the network. It is agnostic to the image download process, has a simple interface, and is very easy to integrate.
